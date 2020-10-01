@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/timharding-io/static/css/main.3279873a.chunk.css",
+    "main.js": "/timharding-io/static/js/main.3f103b56.chunk.js",
+    "main.js.map": "/timharding-io/static/js/main.3f103b56.chunk.js.map",
+    "runtime-main.js": "/timharding-io/static/js/runtime-main.73ab09e4.js",
+    "runtime-main.js.map": "/timharding-io/static/js/runtime-main.73ab09e4.js.map",
+    "static/js/2.500b0238.chunk.js": "/timharding-io/static/js/2.500b0238.chunk.js",
+    "static/js/2.500b0238.chunk.js.map": "/timharding-io/static/js/2.500b0238.chunk.js.map",
+    "index.html": "/timharding-io/index.html",
+    "precache-manifest.173181546b91137d2966e1eab17d3b3e.js": "/timharding-io/precache-manifest.173181546b91137d2966e1eab17d3b3e.js",
+    "service-worker.js": "/timharding-io/service-worker.js",
+    "static/css/main.3279873a.chunk.css.map": "/timharding-io/static/css/main.3279873a.chunk.css.map",
+    "static/js/2.500b0238.chunk.js.LICENSE.txt": "/timharding-io/static/js/2.500b0238.chunk.js.LICENSE.txt",
+    "static/media/gg_bridge.png": "/timharding-io/static/media/gg_bridge.e8a122bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73ab09e4.js",
+    "static/js/2.500b0238.chunk.js",
+    "static/css/main.3279873a.chunk.css",
+    "static/js/main.3f103b56.chunk.js"
+  ]
+}
