@@ -1,0 +1,15 @@
+@import './stylesheets/reset.scss';
+@import './stylesheets/theme.scss';
+@import './stylesheets/header.scss';
+
+#root {
+  overflow: hidden;
+  width: 100%;
+  min-height: 800px;
+  height: 100%;
+}
+
+#cdt {
+  width: 100%;
+  height: 100%;
+}

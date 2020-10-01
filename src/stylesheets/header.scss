@@ -1,0 +1,76 @@
+.application-header {
+  background-color: $th-red;
+  width: 100%;
+  height: 90px;
+  padding: 0;
+  border-top: 2px solid $th-navy;
+  border-bottom: 4px solid $th-navy;
+  position: relative;
+  box-shadow: inset 0px 0px 100px -90px $th-navy;
+  &:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid $th-yellow;
+    box-shadow: 0px 1px 20px 0px $th-navy;
+  }
+}
+
+.header-wordmark {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  height: 100%;
+  width: 45%;
+  &>h1 {
+    color: $th-navy;
+    text-shadow:
+      -1px 0px 0px $th-yellow,
+      0 1px 0px $th-yellow,
+      1px 0 0px $th-yellow,
+      1px 1px 1px $th-yellow;
+    paint-order: stroke fill;
+    width: 65%;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    vertical-align: middle;
+  }
+  &>p {
+    width: 35%;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: $th-navy;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+#gg-overlay {
+  height: 97%;
+  width: 155px;
+  position: absolute;
+  right: auto;
+  left: -12px;
+  top: 10;
+  bottom: 0;
+  z-index: 10;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}

@@ -1,23 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './application.scss';
+const gg = require('./images/gg_bridge.png');
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="application">
+      <header className="application-header">
+        <div className="header-wordmark">
+          <h1>Tim Harding</h1>
+          <p>Software Engineer</p>
+        </div>
+        <div id="gg-overlay" style={{backgroundImage: `url("${gg}")`}}></div>
       </header>
     </div>
   );
