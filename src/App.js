@@ -1,17 +1,13 @@
 import React from 'react';
 import './application.scss';
-const gg = require('./images/gg_bridge.png');
+import Header from './components/header';
+import Main from './components/main';
 
 function App() {
   return (
     <div className="application">
-      <header className="application-header">
-        <div className="header-wordmark">
-          <h1>Tim Harding</h1>
-          <p>Software Engineer</p>
-        </div>
-        <div id="gg-overlay" style={{backgroundImage: `url("${gg}")`}}></div>
-      </header>
+      <Header />
+      <Main />
     </div>
   );
 }

@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+  font-family: 'TH-Icons';
+  src: url('../icons/icomoon.woff') format('woff');
+}
+
+i {
+  font-family: 'TH-Icons';
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Permanent Marker', cursive;
 }
 
 html, body, div, span, object, iframe, p, blockquote,
 pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
-strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+strong, sub, sup, var, b, dl, dt, dd, ol, ul, li, fieldset, form, label,
 legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
 details, figcaption, figure, footer, header, hgroup, menu, nav, section,
 summary, time, mark, audio, video {
