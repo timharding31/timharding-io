@@ -3,8 +3,19 @@
 @import './stylesheets/header.scss';
 
 #root {
+  position: absolute;
   overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  // width: 100%;
+  // min-height: 800px;
+  // height: 100%;
+}
+
+.application {
+  position: relative;
   width: 100%;
-  min-height: 800px;
   height: 100%;
 }

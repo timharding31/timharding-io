@@ -1,13 +1,18 @@
 .application-header {
   background-color: $th-red;
   width: 100%;
-  height: 90px;
   padding: 0;
   border-top: 2px solid $th-navy;
   border-bottom: 4px solid $th-navy;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 10%;
+  bottom: auto;
   box-shadow: inset 0px 0px 100px -90px $th-navy;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  // overflow: hidden;
   &:before {
     content: " ";
     position: absolute;
@@ -23,7 +28,7 @@
 
 .header-wordmark {
   position: absolute;
-  left: 9%;
+  left: 7%;
   top: 0;
   bottom: 0;
   right: auto;
@@ -32,7 +37,8 @@
   align-items: baseline;
   justify-content: flex-start;
   height: 100%;
-  width: 45%;
+  width: 43%;
+  box-sizing: border-box;
   &>h1 {
     // color: $th-navy;
     // text-shadow:
@@ -41,16 +47,21 @@
     //   1px 0 0px $th-yellow,
     //   1px 1px 1px $th-yellow;
     // paint-order: stroke fill;
-    width: 65%;
-    font-size: 60px;
+    width: 60%;
+    height: 100%;
+    font-size: 4vw;
     padding: 0;
     margin: 0;
-    text-align: left;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     transition: all .1s ease-in-out;
     & a {
       color: $th-navy;
       text-decoration: none;
+      padding: 0;
+      margin: 0;
     }
     &:hover {
       transform: scale(1.02);
@@ -58,45 +69,46 @@
     }
   }
   &>p {
-    width: 35%;
-    font-size: 20px;
+    width: 40%;
+    font-size: 1.5vw;
     font-weight: 700;
     font-style: italic;
     color: $th-navy;
-    opacity: 1;
     padding: 0;
     margin: 0;
     text-align: left;
-    vertical-align: middle;
+    // align-self: flex-end;
   }
 }
 
 #gg-overlay {
-  height: 99%;
-  width: 11.5%;
+  height: 92%;
+  width: 11%;
   position: absolute;
   right: auto;
-  left: -12px;
-  top: 0;
+  left: -0.5%;
+  top: auto;
   bottom: 0;
-  z-index: 10;
-  background-size: 100%;
+  z-index: 0;
+  background-size: 70%;
   background-repeat: no-repeat;
+  background-position: left top;
   opacity: 0.2;
 }
 
 #uss-overlay {
-  height: 99%;
+  height: 100%;
   width: 10%;
   position: absolute;
   left: auto;
-  right: 2px;
-  top: 0;
+  right: 0;
+  top: auto;
   bottom: 0;
-  z-index: 10;
-  background-size: 100%;
+  z-index: 0;
+  background-size: 70%;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  background-position: right bottom;
+  opacity: 0.175;
 }
 
 #header-buttons {
@@ -104,20 +116,24 @@
   display: flex;
   right: auto;
   top: auto;
-  bottom: 2%;
-  left: 58%;
-  height: 55%;
-  width: 17%;
-  align-items: center;
+  bottom: 10%;
+  left: 52%;
+  height: 90%;
+  width: 23%;
+  align-items: flex-end;
   justify-content: space-between;
   &>i>a {
     text-decoration: none;
     color: $th-navy;
     transition: all .1s ease-in-out;
     font-size: 25px;
+    &:first-child { font-size: 28px;
+      &:hover {
+        font-size: 30px;
+      }
+    }
     &:hover, .selected {
       font-size: 26px;
-      // transform: scale(1.02);
       text-shadow: 0 0 5px $th-white-shadow;
     }
   }
@@ -126,29 +142,32 @@
 #header-menu-trigger {
   position: absolute;
   font-family: 'TH-Icons';
-  height: 70%;
+  height: 100%;
   width: 50px;
   top: auto;
   bottom: 0;
   left: auto;
-  right: 10%;
+  right: 7%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  z-index: 2;
   cursor: pointer;
+  transition: all .1s ease-in-out;
   &>i {
     position: absolute;
     right: 0;
+    top: auto;
+    bottom: auto;
     font-size: 50px;
     color: $th-navy;
-    float: right;
     transition: all .1s ease-in-out;
   }
-  &>ul { visibility: hidden; }
+  &>ul { visibility: hidden; transform: scale(0.95); opacity: 0.9; width: 200%; }
   &:hover{
     width: 150px;
     &>i { font-size: 52px; text-shadow: 0 0 5px $th-white-shadow; }
-    &>ul { visibility: visible; }
+    &>ul { visibility: visible; transform: scale(1); opacity: 1; width: 100%; }
   }
 }
 
@@ -159,7 +178,7 @@
   left: auto;
   bottom: auto;
   list-style: none;
-  padding: 0 2%;
+  padding: 0;
   margin: 0;
   width: 100%;
   height: 250%;
@@ -170,5 +189,30 @@
   box-sizing: border-box;
   background-color: $th-red;
   border: 3px solid $th-navy;
+  transition: all .1s ease-in-out;
   box-shadow: 10px 10px 20px -10px $th-navy, -10px 10px 20px -10px $th-navy;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  &> li {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $th-navy;
+      &>a {
+        color: $th-yellow;
+        font-weight: 700;
+      }
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $th-navy;
+    font-size: 15px;
+    font-weight: 500;
+    color: $th-navy;
+  }
 }
