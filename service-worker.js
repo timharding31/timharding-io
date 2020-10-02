@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/timharding-io/precache-manifest.1fbd767122d9ff67a7b0c851be55f775.js"
+  "/timharding-io/precache-manifest.4ee219d8aa35c63126f6ad53ab9b56fd.js"
 );
 
 self.addEventListener('message', (event) => {
