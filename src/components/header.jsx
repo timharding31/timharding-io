@@ -12,7 +12,8 @@ export default () => (
     </div>
     <div id="header-buttons">
       <i><Link to="/resume"></Link></i>
-      <i><a href="https://www.linkedin.com/in/timharding31/" target="_blank"></a></i>
+      <i><Link to="/linkedin"></Link></i>
+      {/* <i><a href="https://www.linkedin.com/in/timharding31/" target="_blank"></a></i> */}
       <i><a href="https://github.com/timharding31" target="_blank"></a></i>
     </div>
     <div id="header-menu-trigger">

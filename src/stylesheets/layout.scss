@@ -15,14 +15,47 @@
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: $th-white-opaque;
 }
 
 .application-body {
   position: absolute;
-  top: 12%;
+  top: 65px;
+  padding-top: 10px;
   bottom: 0;
   right: 0;
-  left: 0;
-  padding-top: 5%;
+  left: 20%;
+  width: 80%;
   overflow-y: scroll;
+}
+
+.application-sidebar {
+  position: absolute;
+  top: 50px;
+  // padding-top: 10px;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  width: 25%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $th-navy-opaque;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: skew(-15deg);
+    -ms-transform: skew(-15deg);
+    transform: skew(-15deg);
+    z-index: -1;
+  }
 }

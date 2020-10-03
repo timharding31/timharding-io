@@ -8,8 +8,7 @@
   left: 0;
   right: 0;
   top: 0;
-  height: 10%;
-  min-height: 60px;
+  height: 65px;
   bottom: auto;
   box-shadow: inset 0px 0px 60px -50px $th-navy;
   box-sizing: content-box;
@@ -67,7 +66,7 @@
     }
     &:hover {
       transform: scale(1.02);
-      text-shadow: 0 0 5px $th-white-shadow;
+      text-shadow: 0 0 5px $th-white-opaque;
     }
   }
   &>p {
@@ -137,7 +136,7 @@
     }
     &:hover, .selected {
       font-size: 26px;
-      text-shadow: 0 0 5px $th-white-shadow;
+      text-shadow: 0 0 5px $th-white-opaque;
     }
   }
 }
@@ -169,7 +168,7 @@
   &>ul { visibility: hidden; transform: scale(0.95); opacity: 0.9; &>li { visibility: hidden; } }
   &:hover{
     width: 150px;
-    &>i { font-size: 52px; text-shadow: 0 0 5px $th-white-shadow; }
+    &>i { font-size: 52px; text-shadow: 0 0 5px $th-white-opaque; }
     &>ul { visibility: visible; transform: scale(1); opacity: 1; &>li { visibility: visible; } }
   }
 }

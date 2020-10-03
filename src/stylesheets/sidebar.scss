@@ -1,0 +1,30 @@
+#body-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 90%;
+  margin: 10% 0 30% 10%;
+  &>li {
+    font-family: 'Permanent Marker', cursive;
+    &>a {
+      text-decoration: none;
+      transition: all .1s ease-in-out;
+      &.active {
+        color: $th-red;
+        font-size: 150%;
+        opacity: 1;
+      }
+      &.inactive {
+        color: $th-navy;
+        font-size: 125%;
+        opacity: 0.7;
+        &:hover {
+          color: $th-red;
+        }
+      }
+    }
+  }
+}
