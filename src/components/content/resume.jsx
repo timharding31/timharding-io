@@ -1,14 +1,17 @@
 import React from 'react';
-import { Document, Page } from 'react-pdf';
-import resume from '../../files/tim_harding_resume.pdf';
 
-export default () => (
-  <div id="resume-iframe">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTKkAxJgVaDhi85_dFzRO3kOC9gu9WqT4wFq_2HSNZpWWOGFIseKEhkWiUaU_a4S_V6tjeFIYMt8qgt/pub?embedded=true"></iframe>
-  </div>
-  // <Document
-  //   options={{ workerSrc: "pdf.worker.js" }}
-  //   file={resume}>
-  //   <Page pageNumber={1} />
-  // </Document>
-)
+export default () => {
+  const publishedUrl = 'https://docs.google.com/document/d/1p7yrvETUEppW3Gct_74sw0XHhH9reLlhcy3zHn-Ff2g/export?format=pdf';
+  const visiblePdf = `https://docs.google.com/viewer?url=${publishedUrl}&embedded=true`;
+  const downloadResume = () => {
+    document.location = publishedUrl;
+  }
+
+  return (
+    <>
+    <div id="resume-iframe">
+        <iframe src={visiblePdf}></iframe>
+    </div>
+      <button onClick={downloadResume}>Download</button>
+    </>
+)}

@@ -18,8 +18,9 @@ export default () => (
     <div id="header-menu-trigger">
       <i></i>
       <ul id="nav-dropdown">
-        <li><Link to="/">Placeholder One</Link></li>
-        <li><Link to="/">Placeholder Two</Link></li>
+        <li><Link to="/about">About Me</Link></li>
+        <li><Link to="/projects">My Work</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
     <div id="uss-overlay" style={{ backgroundImage: `url("${uss}")` }} />
