@@ -2,7 +2,7 @@
   "name": "tim-harding",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timharding31.github.io/timharding-io",
+  "homepage": "https://timharding.io",
   "dependencies": {
     "@react-pdf/renderer": "^1.6.11",
     "@testing-library/jest-dom": "^4.2.4",
