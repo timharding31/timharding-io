@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
-export default ({ urlPath, to, text }) => {
-  const activeStatus = (urlPath === to) ? 'active' : 'inactive';
-  return (<Link to={to} className={activeStatus}>{text}</Link>)
+export default ({ to, text }) => {
+  return (<Link activeClass="active" to={to.substring(1)} containerId='application-body' spy={true}>{text}</Link>)
 }

@@ -1,17 +1,23 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import SidebarNav from './sidebar/sidebar_nav';
-import Resume from './content/resume';
-import LinkedIn from './content/linkedin';
+import Sections from './sections';
+import { configureAnchors } from 'react-update-url-on-scroll'
+import { useEffect } from 'react';
 
-export default () => (
-  <>
-    <aside className="application-sidebar">
-      <SidebarNav />
-    </aside>
-    <section className="application-body">
-      <Route exact path="/resume" component={Resume} />
-      <Route exact path="/linkedin" component={LinkedIn} />
-    </section>
-  </>
-)
+
+export default () => {
+  useEffect(() => configureAnchors({affectHistory: true}), []);
+  return (
+    <>
+      <aside className="application-sidebar">
+        <SidebarNav />
+      </aside>
+      <section className="application-body" id="application-body">
+        <Sections />
+          {/* <Route path="/" component={Sections} /> */}
+          {/* <Route exact path="/:section" component={Sections} /> */}
+      </section>
+    </>
+  )
+}
