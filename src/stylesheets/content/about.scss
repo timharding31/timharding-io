@@ -1,0 +1,40 @@
+#about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.about-img {
+  height: 70%;
+  width: 27.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &>img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px $th-navy;
+    z-index: 10;
+    border: 2px solid $th-white;
+  }
+}
+
+.about-text {
+  height: 100%;
+  width: 70%;
+  &>h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: $th-red;
+    font-size: 5vh;
+    &>strong { font-family: 'Permanent Marker', cursive; font-size: 6vh; }
+  }
+  &>p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: $th-navy;
+    font-size: 3vh;
+  }
+}
