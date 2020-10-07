@@ -5,7 +5,7 @@ export default ({ errors }) => {
 
   return (
     <>
-      {errors.length === 0 ? null : errors.map(error => <p className="form-error">{error}</p>)}
+      {errors.length === 0 ? null : errors.map((error, idx) => <p key={`error-${idx}`} className="form-error">{error}</p>)}
     </>
   )
 }

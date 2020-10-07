@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import { Element } from 'react-scroll';
-import sendEmail from '../../util/send_email';
-import FormErrors from '../../util/form_errors';
-import FormSuccesses from '../../util/form_successes';
-import ski from '../../images/me/TIM_ski.jpg';
-// const nodemailer = require("nodemailer");
-// const { google } = require("googleapis");
-// const OAuth2 = google.auth.OAuth2;
+import sendEmail from '../../../util/send_email';
+import FormErrors from '../../../util/form_errors';
+import FormSuccesses from '../../../util/form_successes';
+import ski from '../../../images/me/TIM_ski.jpg';
 
 export default () => {
   let [name, setName] = useState('');
@@ -44,29 +40,29 @@ export default () => {
   }
 
   return (
-    <Element name={'contact'} title={'Contact'} id='contact'>
+    <>
       <div className="form-text">
-      <h1>Send me an email: </h1>
+        <h1>Send me an email: </h1>
       <div className="form-feedback">
         <FormErrors errors={formErrors} />
         <FormSuccesses successes={formSuccesses} />
       </div>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="contact-form-row-one">
-        <input type="text" value={name} placeholder="Name" onChange={changeName}/>
-        <input type="email" value={email} placeholder="Email" onChange={changeEmail}/>
-        </div>
-        <div className="contact-form-row-two">
-        <textarea value={message} placeholder="Message" onChange={changeMessage}/>
-        </div>
-        <div className="contact-form-row-three">
-          <button type="submit">Send<i> </i></button>
-        </div>
-      </form>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="contact-form-row-one">
+            <input type="text" value={name} placeholder="Name" onChange={changeName}/>
+            <input type="email" value={email} placeholder="Email" onChange={changeEmail}/>
+          </div>
+          <div className="contact-form-row-two">
+            <textarea value={message} placeholder="Message" onChange={changeMessage}/>
+          </div>
+          <div className="contact-form-row-three">
+            <button type="submit">Send<i> </i></button>
+          </div>
+        </form>
       </div>
       <div className="form-img">
         <img src={ski} alt="Tim Harding" />
       </div>
-    </Element>
+    </>
   )
 }

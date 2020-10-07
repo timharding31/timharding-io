@@ -5,7 +5,7 @@ export default ({ successes }) => {
 
   return (
     <>
-      {successes.length === 0 ? null : successes.map(success => <p className="form-success">{success}</p>)}
+      {successes.length === 0 ? null : successes.map((success, idx) => <p key={`sucecess-${idx}`} className="form-success">{success}</p>)}
     </>
   )
 }

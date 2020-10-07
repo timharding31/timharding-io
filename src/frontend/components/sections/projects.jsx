@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Element } from 'react-scroll';
-import technologies from './technologies';
-import projectsList from './projects_list';
+import technologies from '../../collections/technologies';
+import projectsList from '../../collections/projects';
 
 export default () => {
   const renderTech = ({ name, svg }, idx) => (
@@ -33,8 +32,8 @@ export default () => {
         <div className="selected-project" key={`selected-${project.key}`} style={project.divStyle}>
           <div className="project-assets">
             <div className="project-links">
-              <a style={project.linkStyle} href={project.liveLink} target="_blank">Live Site</a>
-              <a style={project.linkStyle} href={project.sourceLink} target="_blank">Source Code</a>
+              <a style={project.linkStyle} href={project.liveLink} target="_blank" rel="noopener noreferrer">Live Site</a>
+              <a style={project.linkStyle} href={project.sourceLink} target="_blank" rel="noopener noreferrer">Source Code</a>
             </div>
             <img className="project-image" src={project.imgSrc} alt={project.key} />
           </div>
@@ -49,22 +48,22 @@ export default () => {
   }
 
   return (
-    <Element name={'projects'} title={'My Work'} id='projects'>
+    <>
       <div className="technologies-pane">
-          <p>I know:</p>
+        <p>I know:</p>
         <ul className="my-technologies">
           {technologies.map((tech, idx) => renderTech(tech, idx))}
         </ul>
       </div>
-        <div className="my-projects">
-          <p>I've worked on:</p>
-          <div className="project-pane">
-            <div className="project-selectors">
-              {projectsList.map(project => renderTab(project))}
-            </div>
-              {projectsList.map(project => renderProject(project, selected))}
+      <div className="my-projects">
+        <p>I've built:</p>
+        <div className="project-pane">
+          <div className="project-selectors">
+            {projectsList.map(project => renderTab(project))}
           </div>
+            {projectsList.map(project => renderProject(project, selected))}
         </div>
-    </Element>
+      </div>
+    </>
   )
 }
