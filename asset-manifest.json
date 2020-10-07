@@ -1,33 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f763c9e.chunk.css",
-    "main.js": "/static/js/main.428d2a93.chunk.js",
-    "main.js.map": "/static/js/main.428d2a93.chunk.js.map",
+    "main.css": "/static/css/main.9011cc61.chunk.css",
+    "main.js": "/static/js/main.f8ff5fc9.chunk.js",
+    "main.js.map": "/static/js/main.f8ff5fc9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bd2fdc9.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bd2fdc9.js.map",
-    "static/js/2.bda0a304.chunk.js": "/static/js/2.bda0a304.chunk.js",
-    "static/js/2.bda0a304.chunk.js.map": "/static/js/2.bda0a304.chunk.js.map",
+    "static/js/2.63fe9a51.chunk.js": "/static/js/2.63fe9a51.chunk.js",
+    "static/js/2.63fe9a51.chunk.js.map": "/static/js/2.63fe9a51.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.402e841a08e8495d396fa545fecc62d8.js": "/precache-manifest.402e841a08e8495d396fa545fecc62d8.js",
+    "precache-manifest.108f22429b277df1d3f54635894f1a60.js": "/precache-manifest.108f22429b277df1d3f54635894f1a60.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6f763c9e.chunk.css.map": "/static/css/main.6f763c9e.chunk.css.map",
-    "static/js/2.bda0a304.chunk.js.LICENSE.txt": "/static/js/2.bda0a304.chunk.js.LICENSE.txt",
+    "static/css/main.9011cc61.chunk.css.map": "/static/css/main.9011cc61.chunk.css.map",
+    "static/js/2.63fe9a51.chunk.js.LICENSE.txt": "/static/js/2.63fe9a51.chunk.js.LICENSE.txt",
     "static/media/TIM_main.jpg": "/static/media/TIM_main.c84b39b1.jpg",
     "static/media/TIM_ski.jpg": "/static/media/TIM_ski.492f923d.jpg",
     "static/media/acrosswords_image.png": "/static/media/acrosswords_image.f69c88f5.png",
     "static/media/coup_favicon.png": "/static/media/coup_favicon.15c99c9c.png",
     "static/media/coup_image.png": "/static/media/coup_image.ea4dc732.png",
-    "static/media/gg_bridge.png": "/static/media/gg_bridge.e8a122bd.png",
+    "static/media/gg_bridge.png": "/static/media/gg_bridge.ee1a03ca.png",
     "static/media/application.scss": "/static/media/paper_texture.6f796086.png",
     "static/media/loading.gif": "/static/media/loading.a748c174.gif",
     "static/media/stockfox_favicon.png": "/static/media/stockfox_favicon.649b6815.png",
     "static/media/stockfox_image.png": "/static/media/stockfox_image.4c504e7b.png",
-    "static/media/uss_constitution.png": "/static/media/uss_constitution.ccba7dc6.png"
+    "static/media/uss_constitution.png": "/static/media/uss_constitution.e2a6c21b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3bd2fdc9.js",
-    "static/js/2.bda0a304.chunk.js",
-    "static/css/main.6f763c9e.chunk.css",
-    "static/js/main.428d2a93.chunk.js"
+    "static/js/2.63fe9a51.chunk.js",
+    "static/css/main.9011cc61.chunk.css",
+    "static/js/main.f8ff5fc9.chunk.js"
   ]
 }
