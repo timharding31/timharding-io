@@ -18,7 +18,7 @@ const coup = {
     boxShadow: 'inset 0 10px 30px rgba(55, 97, 113, 0.3)',
   },
   divStyle: {
-    backgroundColor: '#FFFDF5',
+    backgroundColor: 'rgba(255, 253, 245, 0.8)',
     boxShadow: 'inset 0 0 10px rgba(55, 97, 113, 0.3)',
     // boxShadow: 'inset 0 50px 100px #FFFDF5',
   },
@@ -53,7 +53,7 @@ const stockFox = {
     boxShadow: 'inset 0 10px 30px rgba(255,255,255,0.3)',
   },
   divStyle: {
-    backgroundColor: '#1F2124',
+    backgroundColor: 'rgba(31, 33, 36, 0.8)',
     boxShadow: 'inset 0 0 10px rgba(255,255,255,0.3)',
     // boxShadow: 'inset 0 50px 100px #1F2124',
   },
@@ -87,7 +87,7 @@ const acrossWords = {
     boxShadow: 'inset 0 10px 30px rgba(61, 100, 202, 0.3)',
   },
   divStyle: {
-    backgroundColor: '#F6F5F5',
+    backgroundColor: 'rgba(246, 245, 245, 0.8)',
     boxShadow: 'inset 0 0 10px rgba(61, 100, 202, 0.3)',
     // boxShadow: 'inset 0 50px 100px #F6F5F5',
   },
