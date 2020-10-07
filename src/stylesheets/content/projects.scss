@@ -1,0 +1,204 @@
+#projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-projects {
+  width: 70%;
+  height: 90%;
+  background-color: $th-navy-opaque;
+  box-shadow: 0 0 5px $th-navy;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &>p {
+    width: 100%;
+    color: $th-navy;
+    text-align: center;
+    font-size: 3vh;
+    padding: 1% 0 1% 0;
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+.project-pane {
+  position: relative;
+  width: 100%;
+  height: 95%;
+  box-sizing: border-box;
+}
+
+.selected-project {
+  position: absolute;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 92.5%;
+  border: 1px solid $th-navy;
+  border-top: none;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  transition: all .1s ease-in-out;
+}
+
+.project-assets {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  &>div.project-links {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &>a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      height: 20%;
+      border-radius: 10px;
+      background-color: $th-red;
+      cursor: pointer;
+      transition: all .1s ease-in-out;
+      outline: none;
+      font-size: 2vh;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &>img {
+    margin-right: 5%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid $th-navy;
+    box-shadow: 0 0 5px $th-white-opaque;
+  }
+}
+
+.project-description {
+  width: 100%;
+  height: 50%;
+  padding: 2%;
+}
+
+.project-selectors {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 7.5%;
+  display: flex;
+  &>.project-selector {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    height: 100%;
+    padding: 1%;
+    transition: all .1s ease-in-out;
+    border: 1px solid $th-navy;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    filter: grayscale(0.9);
+    opacity: 0.8;
+    &>img {
+      height: 100%;
+    }
+    &>p {
+      width: 75%;
+      margin-left: 2%;
+      font-size: 1.5vw;
+    }
+    &.active {
+      filter: grayscale(0);
+      opacity: 1;
+      border-left: 1px solid $th-navy;
+      border-right: 1px solid $th-navy;
+      border-bottom: none;
+    }
+  }
+}
+
+.technologies-pane {
+  width: 20%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  background-color: $th-red-opaque;
+  border-radius: 10px;
+  box-shadow: 0 0 5px $th-navy;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  &>p {
+    width: 100%;
+    color: $th-navy;
+    text-align: center;
+    font-size: 3vh;
+    padding: 1% 0 1% 0;
+    margin: 0 0 2% 0;
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+.my-technologies {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style: none;
+  border-radius: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid $th-navy;
+  overflow: hidden;
+  margin: 0;
+  &>li {
+    height: 6%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &>svg { width: 30%; max-height: 90%; }
+    &>p {
+      width: 70%;
+      line-height: 100%;
+      color: $th-navy;
+      text-align: left;
+      font-weight: 700;
+      font-size: 2.5vh;
+      font-style: italic;
+      opacity: 0.8;
+    }
+  }
+}
