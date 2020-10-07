@@ -39,7 +39,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 92.5%;
+  height: 92.6%;
   // border: 1px solid $th-navy;
   border-top: none;
   box-sizing: border-box;
@@ -79,7 +79,7 @@
       cursor: pointer;
       transition: all .1s ease-in-out;
       outline: none;
-      font-size: 2vh;
+      font-size: 1vw;
       text-decoration: none;
       font-weight: 700;
       margin: 0;
@@ -113,7 +113,6 @@
   width: 100%;
   height: 7.5%;
   display: flex;
-  box-shadow: 0 0 5px $th-white-opaque;
   &>.project-selector {
     cursor: pointer;
     display: flex;

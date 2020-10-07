@@ -38,7 +38,7 @@ export default () => {
             <img className="project-image" src={project.imgSrc} alt={project.key} />
           </div>
         <div className="project-description">
-          <p style={project.pStyle}>{project.description}</p>
+            {project.description.map((paragraph, idx) => (<p key={`p-${project.key}-${idx}`} style={project.pStyle}>{paragraph}</p>))}
         </div>
         </div>
       )

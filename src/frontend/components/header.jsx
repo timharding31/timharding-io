@@ -17,13 +17,10 @@ export default () => (
       {/* <i><a href="https://github.com/timharding31" target="_blank"></a></i> */}
     </div>
     <div id="header-menu-trigger">
-      <i></i>
+      <h2>Links <i></i></h2>
       <ul id="nav-dropdown">
-        <li><i><a href="https://www.linkedin.com/in/timharding31/" target="_blank" rel="noopener noreferrer"></a></i></li>
-        <li><i><a href="https://github.com/timharding31" target="_blank" rel="noopener noreferrer"></a></i></li>
-        {/* <li><Link to="/about">About Me</Link></li>
-        <li><Link to="/projects">My Work</Link></li>
-        <li><Link to="/contact">Contact</Link></li> */}
+        <li><a href="https://www.linkedin.com/in/timharding31/" target="_blank" rel="noopener noreferrer"><i></i> LinkedIn</a></li>
+        <li><a href="https://github.com/timharding31" target="_blank" rel="noopener noreferrer"><i></i> GitHub</a></li>
       </ul>
     </div>
     <div id="uss-overlay" style={{ backgroundImage: `url("${uss}")` }} />
