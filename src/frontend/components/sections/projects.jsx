@@ -62,6 +62,9 @@ export default () => {
             {projectsList.map(project => renderTab(project))}
           </div>
             {projectsList.map(project => renderProject(project, selected))}
+        <div className="site-about">
+          <p>I also built this site with React, check it out on <a href="https://github.com/timharding31/timharding-io" target="_blank" rel="noopener noreferrer"> GitHub</a>!</p>
+        </div>
         </div>
       </div>
     </>

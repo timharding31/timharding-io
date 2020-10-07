@@ -7,6 +7,8 @@ export default () => {
     scroller.scrollTo('about', { containerId: 'application-body', smooth: true, duration: 0, spy: true, hashSpy: true })
   }, []);
 
+  
+
   const renderLink = section => (
     <li key={`link-${section.key}`}>
       <Link

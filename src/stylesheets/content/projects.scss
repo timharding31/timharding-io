@@ -15,13 +15,15 @@
   justify-content: flex-start;
   align-items: center;
   &>p {
+    height: 5%;
     width: 100%;
     color: $th-navy;
     text-align: center;
     font-size: 3vh;
-    padding: 1% 0 1% 0;
+    padding: 0.5% 0;
     margin: 0;
     font-family: 'Permanent Marker', cursive;
+    opacity: 0.9;
   }
 }
 
@@ -36,21 +38,19 @@
   position: absolute;
   right: 0;
   top: auto;
-  bottom: 0;
+  bottom: 5%;
   left: 0;
   width: 100%;
-  height: 92.6%;
-  // border: 1px solid $th-navy;
+  height: 90%;
   border-top: none;
   box-sizing: border-box;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
   transition: all .1s ease-in-out;
+  overflow: hidden;
 }
 
 .project-assets {
@@ -111,7 +111,7 @@
   bottom: auto;
   left: 0;
   width: 100%;
-  height: 7.5%;
+  height: 5%;
   display: flex;
   &>.project-selector {
     cursor: pointer;
@@ -128,7 +128,7 @@
     filter: grayscale(0.9);
     opacity: 0.8;
     &>img {
-      max-height: 100%;
+      max-height: 120%;
       max-width: 25%;
     }
     &>p {
@@ -168,6 +168,7 @@
     padding: 1% 0 1% 0;
     margin: 0 0 2% 0;
     font-family: 'Permanent Marker', cursive;
+    opacity: 0.9;
   }
 }
 
@@ -199,6 +200,49 @@
       font-size: 2.5vh;
       font-style: italic;
       opacity: 0.8;
+    }
+  }
+}
+
+.site-about {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 5%;
+  padding: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  // border: 2px solid $th-navy;
+  border-top: none;
+  background-color: $th-navy-opaque;
+  &>p {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: $th-navy;
+    font-style: italic;
+    opacity: 0.9;
+    font-family: 'Permanent Marker', cursive;
+    &>a {
+      text-decoration: none;
+      padding-left: 3px;
+      font-weight: 900;
+      color: inherit;
+      transition: all .1s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 }

@@ -83,7 +83,7 @@ const stockFox = {
   },
   description: [
     'StockFox is a stock-trading simulation application where users can research the market and simulate stock trades using reloadable buying power. As a full-stack clone of Robinhood, it was built from scratch using a Ruby on Rails backend, a PostgreSQL database to store users and stocks, and a React frontend with state managed by Redux.',
-    'I configured external API calls to regularly patch each stock on the backend with latest price available, and to update the normalized Redux state with granular pricing information when requested. On the page for each stock, an interactive chart is displayed to monitor pricing changes over a user-specified range. The charts were built using the Recharts package and glean prices from the Redux state. User interaction with the curve updates the price displayed at the head via a custom tooltip function.',
+    'I configured external API calls to regularly patch each stock on the backend with latest price available, and to update the normalized Redux state with granular pricing information when requested. On the page for each stock, an interactive chart is displayed to monitor pricing changes in the Redux state over a user-specified range. User interaction with the curve updates the price displayed at the head via a custom tooltip function.',
     'Users can search by ticker symbol or company name for any stock listed on the NYSE or Nasdaq, and stocks can be \'bought\', \'sold\', and added to a watchlist from the sidebar component on each page. Stocks in the users\' portfolios and watchlists are shown with a sparkline representing their one-day price movement in the same sidebar on all pages.'
   ]
 }

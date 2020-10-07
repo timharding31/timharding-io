@@ -20,11 +20,11 @@
 
 .application-sidebar {
   position: absolute;
-  top: 50px;
+  top: 10%;
   bottom: 0;
   right: auto;
   left: 0;
-  width: 25%;
+  width: 20%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -51,11 +51,11 @@
 
 #application-body {
   position: absolute;
-  top: 65px;
+  top: 10%;
   bottom: 0;
   right: 0;
   left: auto;
-  width: 75%;
+  width: 80%;
   overflow-y: scroll;
   z-index: 3;
   &>div {

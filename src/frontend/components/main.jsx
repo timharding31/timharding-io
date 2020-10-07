@@ -10,7 +10,7 @@ export default () => {
       {section.component}
     </Element>
   )
-  
+
   return (
     <>
       <aside className="application-sidebar">
