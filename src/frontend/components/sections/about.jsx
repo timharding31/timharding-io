@@ -7,7 +7,7 @@ export default () => (
       <img src={main} alt="Tim Harding"/>
       <div className="currently-playing">
         <h3>Check out what I'm listening to: </h3>
-        <iframe src="https://open.spotify.com/embed/playlist/61sDD5sTRTAJ6mEz9kNymr" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/playlist/61sDD5sTRTAJ6mEz9kNymr" frameBorder="0" allowtransparency="true" allow="encrypted-media" title="Spotify"></iframe>
       </div>
     </div>
     <div className="about-text">

@@ -20,7 +20,7 @@
     width: 100%;
     color: $th-navy;
     text-align: center;
-    font-size: 3vw;
+    font-size: 16px;
     padding: 0.5% 0;
     margin: 0;
     font-family: 'Permanent Marker', cursive;
@@ -74,14 +74,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 20%;
+      width: 30%;
       height: 60%;
       border-radius: 5px;
       background-color: $th-red;
       cursor: pointer;
       transition: all .1s ease-in-out;
       outline: none;
-      font-size: 2vw;
+      font-size: 16px;
       text-decoration: none;
       font-weight: 700;
       margin: 0;
@@ -119,7 +119,7 @@
   &>.project-selector {
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 33.33%;
     height: 100%;
@@ -131,13 +131,14 @@
     filter: grayscale(0.9);
     opacity: 0.8;
     &>img {
-      max-height: 120%;
-      max-width: 25%;
+      max-height: 100%;
+      max-width: 20%;
     }
     &>p {
       width: 75%;
       margin-left: 2%;
-      font-size: 1.5vw;
+      font-size: 16px;
+      overflow-x: scroll;
     }
     &.active {
       filter: grayscale(0);
@@ -173,7 +174,7 @@
     margin: 0;
     height: 100%;
     width: 100%;
-    font-size: 2vw;
+    font-size: 13px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -182,6 +183,7 @@
     color: $th-navy;
     font-style: italic;
     opacity: 0.9;
+    overflow-x: scroll;
     font-family: 'Permanent Marker', cursive;
     &>a {
       text-decoration: none;

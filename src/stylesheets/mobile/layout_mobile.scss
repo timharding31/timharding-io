@@ -21,7 +21,7 @@
 .application-sidebar {
   position: absolute;
   top: 5%;
-  bottom: 85%;
+  bottom: 80%;
   right: auto;
   left: 0;
   width: 100%;
@@ -30,6 +30,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  z-index: 20;
   &:after {
     content: '';
     position: absolute;
@@ -62,7 +63,5 @@
   &>div {
     height: 100%;
     width: 100%;
-    margin-top: 0px;
-    padding: 1px;
   }
 }

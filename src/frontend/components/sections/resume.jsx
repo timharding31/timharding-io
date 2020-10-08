@@ -11,7 +11,7 @@ export default () => {
   return (
     <>
       <div id="resume-iframe-container" style={{ backgroundImage: `url("${loading}")` }}>
-          <iframe id="resume-iframe" src={visiblePdf} title='resume'></iframe>
+          <iframe id="resume-iframe" src={visiblePdf} title='Resume'></iframe>
       </div>
       <button onClick={downloadResume}>Download<i></i></button>
     </>
