@@ -23,7 +23,7 @@
 }
 
 .about-text {
-  height: 100%;
+  height: 90%;
   width: 55%;
   display: flex;
   justify-content: space-evenly;
@@ -34,18 +34,17 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: $th-red;
-    font-size: 5vh;
+    font-size: 2vw;
     &>strong { font-family: 'Permanent Marker', cursive; font-size: 6vh; }
-    margin-bottom: 5%;
   }
   &>p {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: $th-navy;
-    font-size: 3vh;
+    font-size: 1.4vw;
     text-align: left;
     line-height: 1.1;
-    padding-bottom: 1%;
+    padding: 0 4% 1% 4%;
     opacity: 0.8;
     font-style: italic;
   }
