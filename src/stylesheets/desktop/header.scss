@@ -9,6 +9,7 @@
   right: 0;
   top: 0;
   height: 10%;
+  min-height: 56px;
   bottom: auto;
   box-shadow: inset 0px 0px 60px -50px $th-navy;
   box-sizing: content-box;
@@ -34,24 +35,28 @@
   right: auto;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: baseline;
+  justify-content: space-evenly;
   height: 100%;
-  width: 43%;
+  width: 56%;
   box-sizing: border-box;
+  padding-bottom: 0.25%;
   &>h1 {
-    width: 60%;
+    flex-grow: 2;
     height: 100%;
-    font-size: 4vw;
+    max-width: 50%;
+    font-size: 56px;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     transition: all .1s ease-in-out;
     z-index: 11;
     cursor: pointer;
+    white-space: nowrap;
+    clear: both;
     & a {
       display: flex;
       align-items: flex-end;
@@ -70,15 +75,15 @@
   &>p {
     display: flex;
     align-items: flex-end;
-    width: 40%;
+    justify-content: flex-start;
+    flex-grow: 1;
     height: 100%;
-    font-size: 1.5vw;
+    font-size: 25px;
     font-weight: 700;
     font-style: italic;
     color: $th-navy;
     padding: 0;
     margin: 0;
-    margin-bottom: 1%;
     text-align: left;
   }
 }
@@ -116,7 +121,7 @@
 #header-menu-trigger {
   position: absolute;
   font-family: 'TH-Icons';
-  height: 98%;
+  height: 40%;
   width: 10%;
   top: auto;
   bottom: 2%;
@@ -124,8 +129,9 @@
   right: 7%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   z-index: 11;
+  padding-top: 60%;
   &>h2 {
     transition: all .1s ease;
     margin: 0;
@@ -135,7 +141,8 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 2vw;
+    vertical-align: bottom;
+    font-size: 25px;
     color: $th-navy;
     cursor: pointer;
     &>i {
@@ -198,8 +205,19 @@
     width: 100%;
     text-decoration: none;
     color: $th-navy;
-    font-size: 1.3vw;
+    font-size: 16px;
     font-weight: 500;
     color: $th-navy;
   }
 }
+
+// @media only screen and (max-width: 1192px) {
+//   .header-wordmark {
+//     &>h1 {
+//       white-space: nowrap;
+//     }
+//     &>p {
+//     display: none;
+//     }
+//   }
+// }

@@ -10,12 +10,6 @@ export default () => (
       <h1><Link to="about" containerId="application-body" smooth={true} duration={500}>Tim Harding</Link></h1>
       <p>Software Engineer</p>
     </div>
-    <div id="header-buttons">
-      {/* <i><Link to="/resume"></Link></i>
-      <i><Link to="/linkedin"></Link></i> */}
-      {/* <i><a href="https://www.linkedin.com/in/timharding31/" target="_blank"></a></i> */}
-      {/* <i><a href="https://github.com/timharding31" target="_blank"></a></i> */}
-    </div>
     <div id="header-menu-trigger">
       <h2>Links <i></i></h2>
       <ul id="nav-dropdown">

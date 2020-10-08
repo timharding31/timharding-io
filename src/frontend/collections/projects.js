@@ -37,8 +37,9 @@ const coup = {
     fontFamily: 'Roboto',
     fontWeight: 500,
     textAlign: 'left',
-    fontSize: '2vh',
-    padding: '0 2%'
+    fontSize: '16px',
+    padding: '0 2%',
+    overflowY: 'scroll'
   },
   description: [
     'Coup de Tim is my spin on one my favorite games to play with friends, Rikki Tahta\'s Coup. Though it\'s programmed entirely in "vanilla" JavaScript, I designed a React-like modular architecture for the game and its components that adheres to the classic paradigms of OOP. Each piece of the game, from the coins to the entire gameplay instance, is an ES6 class that receives a DOM node as its construction parameter. Class instances render their elements (and those of their children) as descendants of that construction node, and changes to the game-state during play prompt re-renders of the relevant components.',
@@ -78,8 +79,9 @@ const stockFox = {
     fontFamily: 'Roboto',
     fontWeight: 500,
     textAlign: 'left',
-    fontSize: '2vh',
-    padding: '0 2%'
+    fontSize: '16px',
+    padding: '0 2%',
+    overflowY: 'scroll'
   },
   description: [
     'StockFox is a stock-trading simulation application where users can research the market and simulate stock trades using reloadable buying power. As a full-stack clone of Robinhood, it was built from scratch using a Ruby on Rails backend, a PostgreSQL database to store users and stocks, and a React frontend with state managed by Redux.',
@@ -119,8 +121,9 @@ const acrossWords = {
     fontFamily: 'Roboto',
     fontWeight: 500,
     textAlign: 'left',
-    fontSize: '2vh',
-    padding: '0 2%'
+    fontSize: '16px',
+    padding: '0 2%',
+    overflowY: 'scroll',
   },
   description: [
     'AcrossWords is a procedurally-generated word game inspired by the New York Times Crossword puzzle (a daily obsession of mine). Clues are served up one at a time, each one chosen from a bank of 16,000 clues based on the user\'s previous guess, until the timer runs out. Players receive diminishing time & score bonuses for answering clues correctly, and are penalized for incorrect guesses.',

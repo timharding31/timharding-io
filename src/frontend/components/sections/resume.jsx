@@ -8,16 +8,9 @@ export default () => {
     document.location = publishedUrl;
   }
 
-  const reloadIframe = (e) => {
-    e.preventDefault();
-    const iframe = document.getElementById('resume-iframe');
-    iframe.src = iframe.src;
-  }
-
   return (
     <>
       <div id="resume-iframe-container" style={{ backgroundImage: `url("${loading}")` }}>
-        {(document.querySelector('input[id^="apiproxy"]')) ? null : <button className="resume-reload-button" onClick={reloadIframe}><i></i></button>}
           <iframe id="resume-iframe" src={visiblePdf} title='resume'></iframe>
       </div>
       <button onClick={downloadResume}>Download<i></i></button>
