@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b031f63e.chunk.css",
-    "main.js": "/static/js/main.9a559451.chunk.js",
-    "main.js.map": "/static/js/main.9a559451.chunk.js.map",
+    "main.css": "/static/css/main.0bc1141f.chunk.css",
+    "main.js": "/static/js/main.d6393a7a.chunk.js",
+    "main.js.map": "/static/js/main.d6393a7a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bd2fdc9.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bd2fdc9.js.map",
     "static/js/2.63fe9a51.chunk.js": "/static/js/2.63fe9a51.chunk.js",
     "static/js/2.63fe9a51.chunk.js.map": "/static/js/2.63fe9a51.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2fc0980dc8aca71976e728bf10b74718.js": "/precache-manifest.2fc0980dc8aca71976e728bf10b74718.js",
+    "precache-manifest.b09fbd428acac0bded6b2c3125f10445.js": "/precache-manifest.b09fbd428acac0bded6b2c3125f10445.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b031f63e.chunk.css.map": "/static/css/main.b031f63e.chunk.css.map",
+    "static/css/main.0bc1141f.chunk.css.map": "/static/css/main.0bc1141f.chunk.css.map",
     "static/js/2.63fe9a51.chunk.js.LICENSE.txt": "/static/js/2.63fe9a51.chunk.js.LICENSE.txt",
     "static/media/TIM_main.jpg": "/static/media/TIM_main.c84b39b1.jpg",
     "static/media/TIM_ski.jpg": "/static/media/TIM_ski.492f923d.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.3bd2fdc9.js",
     "static/js/2.63fe9a51.chunk.js",
-    "static/css/main.b031f63e.chunk.css",
-    "static/js/main.9a559451.chunk.js"
+    "static/css/main.0bc1141f.chunk.css",
+    "static/js/main.d6393a7a.chunk.js"
   ]
 }
