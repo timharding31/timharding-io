@@ -128,7 +128,7 @@ const acrossWords = {
   description: [
     'AcrossWords is a procedurally-generated word game inspired by the New York Times Crossword puzzle (a daily obsession of mine). Clues are served up one at a time, each one chosen from a bank of 16,000 clues based on the user\'s previous guess, until the timer runs out. Players receive diminishing time & score bonuses for answering clues correctly, and are penalized for incorrect guesses.',
     'AcrossWords was built by a team of developers leveraging the MERN stack. My main roles, though I had a hand in most facets of the front and backend, were to seed the MongoDB model with clues and to build the \'Reveal Answer\' frontend functionality and backend scoring logic into the game.',
-    'To seed the clues, I created a Python script that incorporated Selenium browser automation to scrape the NYTXW site for hundreds of .puz files from each of three difficulty levels. The .puz files are encoded in a text stream, but my research into the proprietary format allowed for the creation of a JavaScript library to parse each puzzle\'s solution and use my understanding of crossword construction to match each answer to pieces of the clue string.'
+    'To seed the clues, I created a Python script that incorporated Selenium browser automation to scrape the NYTXW site for hundreds of .puz files from each of three difficulty levels. The .puz files are encoded in a text stream, but my research into the proprietary format allowed for the creation of a JavaScript library to parse each puzzle\'s solution and for me to leverage crossword construction experience to match each answer to pieces of the clue string.'
   ]
 }
 

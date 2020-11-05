@@ -7,7 +7,7 @@ export default () => (
   <header className="application-header">
     <div id="gg-overlay" style={{ backgroundImage: `url("${gg}")` }} />
     <div className="header-wordmark">
-      <h1><Link to="about" containerId="application-body" smooth={true} duration={500}>Tim Harding</Link></h1>
+      <Link to="about" containerId="application-body" smooth={true} duration={500}>Tim Harding</Link>
       <p>Software Engineer</p>
     </div>
     <div id="header-menu-trigger">

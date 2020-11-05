@@ -59,13 +59,11 @@
   overflow-y: scroll;
   z-index: 3;
   &>div {
+    position: relative;
     height: 100%;
     width: 100%;
-    margin-top: 0px;
-    padding: 1px;
-    &:first-child {
-      margin-top: -10px;
-      padding-top: 11px;
-    }
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1% 5% 1% 0;
   }
 }
