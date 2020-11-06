@@ -30,6 +30,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 10;
   &:after {
     content: '';
     position: absolute;
@@ -55,9 +56,11 @@
   bottom: 0;
   right: 0;
   left: auto;
-  width: 80%;
+  width: 100%;
   overflow-y: scroll;
   z-index: 3;
+  padding: 0 0 0 20%;
+  box-sizing: border-box;
   &>div {
     position: relative;
     height: 100%;
