@@ -2,9 +2,21 @@ import React from 'react';
 import { Link } from 'react-scroll';
 const gg = require('../../images/gg_bridge.png');
 const uss = require('../../images/uss_constitution.png');
+const metal = require('../../images/metal_texture.png');
+
+const headerColorOverlayStyle = {
+    opacity: '0.4',
+    position: 'absolute',
+    top: 0, bottom: 0, left: 0, right: 0,
+    backgroundRepeat: 'repeat',
+    backgroundSize: '15%',
+    backgroundColor: '#c0362c',
+    backgroundImage: `url("${metal}")`,
+};
 
 export default () => (
-  <header className="application-header">
+  <header className="application-header" >
+        <div id="header-color" style={headerColorOverlayStyle} ></div>
     <div id="gg-overlay" style={{ backgroundImage: `url("${gg}")` }} />
     <div className="header-wordmark">
       <Link to="about" containerId="application-body" smooth={true} duration={500}>Tim Harding</Link>
