@@ -18,6 +18,9 @@ const coup = {
   tabStyle: {
     backgroundColor: '#FFFDF5',
     boxShadow: 'inset 0 10px 30px rgba(55, 97, 113, 0.3)',
+    borderTop: '3px solid #8F3F36',
+    borderLeft: '1px solid #8F3F36',
+    borderRight: '1px solid #8F3F36'
   },
   divStyle: {
     backgroundColor: 'rgba(255, 253, 245, 0.8)',
@@ -61,6 +64,9 @@ const stockFox = {
   tabStyle: {
     backgroundColor: '#1F2124',
     boxShadow: 'inset 0 10px 30px rgba(255,255,255,0.5)',
+    borderTop: '3px solid #77C151',
+    borderLeft: '1px solid #77C151',
+    borderRight: '1px solid #77C151'
   },
   divStyle: {
     backgroundColor: 'rgba(31, 33, 36, 0.9)',
@@ -103,11 +109,14 @@ const acrossWords = {
   tabStyle: {
     backgroundColor: '#F6F5F5',
     boxShadow: 'inset 0 10px 30px rgba(61, 100, 202, 0.5)',
+    borderTop: '3px solid rgb(61, 100, 202)',
+    borderLeft: '1px solid rgb(61, 100, 202)',
+    borderRight: '1px solid rgb(61, 100, 202)',
   },
   divStyle: {
     backgroundColor: 'rgba(246, 245, 245, 0.8)',
     boxShadow: 'inset 0 0 10px rgba(61, 100, 202, 0.5)',
-    borderTop: '3px solid rgba(61, 100, 202,1)'
+    borderTop: '3px solid rgb(61, 100, 202)'
   },
   linkStyle: {
     backgroundColor: 'rgb(61, 100, 202)',
@@ -145,6 +154,9 @@ const hsp = {
   tabStyle: {
     backgroundColor: '#FFFFFF',
     boxShadow: 'inset 0 10px 30px rgba(60, 60, 62, 0.25)',
+    borderTop: '3px solid rgb(3, 113, 60)',
+    borderLeft: '1px solid rgb(3, 113, 60)',
+    borderRight: '1px solid rgb(3, 113, 60)',
   },
   divStyle: {
     backgroundColor: '#FFFFFF',
@@ -159,6 +171,7 @@ const hsp = {
     color: 'rgb(60, 60, 62)',
     fontFamily: 'Cabin',
     fontWeight: 700,
+    letterSpacing: '-1px'
   },
   pStyle: {
     color: 'rgb(60, 60, 62)',
