@@ -1,9 +1,11 @@
 import coupFavicon from '../../icons/coup_favicon.png';
 import stockfoxFavicon from '../../icons/stockfox_favicon.png';
 import acrosswordsFavicon from '../../icons/acrosswords_favicon.png';
+import hspFavicon from '../../icons/hsp_favicon.png';
 import coupImage from '../../images/projects/coup_image.png';
 import stockfoxImage from '../../images/projects/stockfox_image.png';
 import acrosswordsImage from '../../images/projects/acrosswords_image.png';
+import hspImage from '../../images/projects/hsp_image.png';
 
 const coup = {
   name: 'Coup de Tim',
@@ -115,6 +117,7 @@ const acrossWords = {
     color: '#404040',
     fontFamily: 'Orbitron',
     fontWeight: 700,
+    fontSize: '16px'
   },
   pStyle: {
     color: '#404040',
@@ -130,6 +133,46 @@ const acrossWords = {
     'AcrossWords was built by a team of developers leveraging the MERN stack. My main roles, though I had a hand in most facets of the front and backend, were to seed the MongoDB model with clues and to build the \'Reveal Answer\' frontend functionality and backend scoring logic into the game.',
     'To seed the clues, I created a Python script that incorporated Selenium browser automation to scrape the NYTXW site for hundreds of .puz files from each of three difficulty levels. The .puz files are encoded in a text stream, but my research into the proprietary format allowed for the creation of a JavaScript library to parse each puzzle\'s solution and for me to leverage crossword construction experience to match each answer to pieces of the clue string.'
   ]
-}
+};
 
-export default [coup, stockFox, acrossWords];
+const hsp = {
+  name: 'HSP Group',
+  key: 'hsp',
+  liveLink: 'https://hsp.com/',
+  sourceLink: null,
+  iconSrc: hspFavicon,
+  imgSrc: hspImage,
+  tabStyle: {
+    backgroundColor: '#FFFFFF',
+    boxShadow: 'inset 0 10px 30px rgba(60, 60, 62, 0.25)',
+  },
+  divStyle: {
+    backgroundColor: '#FFFFFF',
+    boxShadow: 'inset 0 0 10px rgba(60, 60, 62, 0.5)',
+    borderTop: '3px solid rgb(3, 113, 60)'
+  },
+  linkStyle: {
+    backgroundColor: 'rgb(3, 113, 60)',
+    color: '#FFFFFF'
+  },
+  hStyle: {
+    color: 'rgb(60, 60, 62)',
+    fontFamily: 'Cabin',
+    fontWeight: 700,
+  },
+  pStyle: {
+    color: 'rgb(60, 60, 62)',
+    fontFamily: 'Roboto',
+    fontWeight: 500,
+    textAlign: 'left',
+    fontSize: '16px',
+    padding: '0 2%',
+    overflowY: 'scroll',
+  },
+  description: [
+    'HSP Group is a management consultancy and financial services firm that helps companies manage their international operations and expand globally. They are backed by one of the world\'s leading PE and venture capital firms. My role as lead Web Developer and early employee involves working directly with HSP Group\'s founders and investors to refine and support the company\'s public messaging.',
+    'I built HSP Group\'s website to coincide with their marketing launch in November, 2020. I designed the user experience, developed the site on Squarespace, integrated Google Analytics, and deployed custom JavaScript and CSS to buttress the company\'s marketing and growth initiatives.',
+  ]
+};
+
+export default [coup, stockFox, acrossWords, hsp];

@@ -33,7 +33,7 @@ export default () => {
           <div className="project-assets">
             <div className="project-links">
               <a style={project.linkStyle} href={project.liveLink} target="_blank" rel="noopener noreferrer">Live Site</a>
-              <a style={project.linkStyle} href={project.sourceLink} target="_blank" rel="noopener noreferrer">Source Code</a>
+              {project.sourceLink ? <a style={project.linkStyle} href={project.sourceLink} target="_blank" rel="noopener noreferrer">Source Code</a> : null}
             </div>
             <img className="project-image" src={project.imgSrc} alt={project.key} />
           </div>
