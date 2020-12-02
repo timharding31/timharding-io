@@ -30,6 +30,8 @@ export default () => {
     if (project.key === state) {
       return (
         <div className="selected-project" key={`selected-${project.key}`} style={project.divStyle}>
+          <div className="border-top-left" style={project.topLeftStyle} />
+          <div className="border-top-right" style={project.topRightStyle} />
           <div className="project-assets">
             <div className="project-links">
               <a style={project.linkStyle} href={project.liveLink} target="_blank" rel="noopener noreferrer">Live Site</a>

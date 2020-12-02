@@ -17,15 +17,14 @@ const coup = {
   imgSrc: coupImage,
   tabStyle: {
     backgroundColor: '#FFFDF5',
-    boxShadow: 'inset 0 10px 30px rgba(55, 97, 113, 0.3)',
     borderTop: '3px solid #8F3F36',
-    borderLeft: '1px solid #8F3F36',
-    borderRight: '1px solid #8F3F36'
+    borderLeft: '3px solid #8F3F36',
+    borderRight: '3px solid #8F3F36'
   },
   divStyle: {
-    backgroundColor: 'rgba(255, 253, 245, 0.8)',
-    boxShadow: 'inset 0 0 10px rgba(55, 97, 113, 0.5)',
-    borderTop: '3px solid #8F3F36'
+    backgroundColor: 'rgba(255, 253, 245, 1)',
+    boxShadow: 'inset 0 -10px 10px rgba(55, 97, 113, 0.5)',
+    borderBottom: '3px solid #8F3F36',
   },
   linkStyle: {
     backgroundColor: '#8F3F36',
@@ -46,6 +45,24 @@ const coup = {
     padding: '0 2%',
     overflowY: 'scroll'
   },
+  topLeftStyle: {
+    position: 'absolute',
+    top: 0, bottom: 'auto', left: 0,
+    right: 'calc(100% - 3px)',
+    width: 'auto',
+    height: '3px',
+    backgroundColor: '#8F3F36',
+    borderBottomRightRadius: '5px'
+  },
+  topRightStyle: {
+    position: 'absolute',
+    top: 0, bottom: 'auto', right: 0,
+    left: 'calc(25% - 3px)',
+    width: 'auto',
+    height: '4px',
+    backgroundColor: '#8F3F36',
+    borderBottomLeftRadius: '5px'
+  },
   description: [
     'Coup de Tim is my spin on one my favorite games to play with friends, Rikki Tahta\'s Coup. Though it\'s programmed entirely in "vanilla" JavaScript, I designed a React-like modular architecture for the game and its components that adheres to the classic paradigms of OOP. Each piece of the game, from the coins to the entire gameplay instance, is an ES6 class that receives a DOM node as its construction parameter. Class instances render their elements (and those of their children) as descendants of that construction node, and changes to the game-state during play prompt re-renders of the relevant components.',
     'The site features a slideshow to teach the rules of Coup, and a \'Tutorial\' class that extends the standard \'Gameplay\' class to familiarize players with Coup de Tim by highlighting player controls and the gameplay areas.',
@@ -63,15 +80,14 @@ const stockFox = {
   imgSrc: stockfoxImage,
   tabStyle: {
     backgroundColor: '#1F2124',
-    boxShadow: 'inset 0 10px 30px rgba(255,255,255,0.5)',
     borderTop: '3px solid #77C151',
-    borderLeft: '1px solid #77C151',
-    borderRight: '1px solid #77C151'
+    borderLeft: '3px solid #77C151',
+    borderRight: '3px solid #77C151'
   },
   divStyle: {
-    backgroundColor: 'rgba(31, 33, 36, 0.9)',
-    boxShadow: 'inset 0 0 10px rgba(255,255,255,0.5)',
-    borderTop: '3px solid #77C151'
+    backgroundColor: 'rgba(31, 33, 36, 1)',
+    boxShadow: 'inset 0 -10px 10px rgba(255,255,255,0.25)',
+    borderBottom: '3px solid #77C151',
   },
   linkStyle: {
     backgroundColor: '#77C151',
@@ -91,6 +107,24 @@ const stockFox = {
     padding: '0 2%',
     overflowY: 'scroll'
   },
+  topLeftStyle: {
+    position: 'absolute',
+    top: 0, bottom: 'auto', left: 0,
+    right: 'calc(75% - 3px)',
+    width: 'auto',
+    height: '3px',
+    backgroundColor: '#77C151',
+    borderBottomRightRadius: '5px'
+  },
+  topRightStyle: {
+    position: 'absolute',
+    top: 0, bottom: 'auto', right: '0',
+    left: 'calc(50% - 3px)',
+    width: 'auto',
+    height: '4px',
+    backgroundColor: '#77C151',
+    borderBottomLeftRadius: '5px'
+  },
   description: [
     'StockFox is a stock-trading simulation application where users can research the market and simulate stock trades using reloadable buying power. As a full-stack clone of Robinhood, it was built from scratch using a Ruby on Rails backend, a PostgreSQL database to store users and stocks, and a React frontend with state managed by Redux.',
     'I configured external API calls to regularly patch each stock on the backend with latest price available, and to update the normalized Redux state with granular pricing information when requested. On the page for each stock, an interactive chart is displayed to monitor pricing changes in the Redux state over a user-specified range. User interaction with the curve updates the price displayed at the head via a custom tooltip function.',
@@ -108,15 +142,14 @@ const acrossWords = {
   imgSrc: acrosswordsImage,
   tabStyle: {
     backgroundColor: '#F6F5F5',
-    boxShadow: 'inset 0 10px 30px rgba(61, 100, 202, 0.5)',
     borderTop: '3px solid rgb(61, 100, 202)',
-    borderLeft: '1px solid rgb(61, 100, 202)',
-    borderRight: '1px solid rgb(61, 100, 202)',
+    borderLeft: '3px solid rgb(61, 100, 202)',
+    borderRight: '3px solid rgb(61, 100, 202)',
   },
   divStyle: {
-    backgroundColor: 'rgba(246, 245, 245, 0.8)',
-    boxShadow: 'inset 0 0 10px rgba(61, 100, 202, 0.5)',
-    borderTop: '3px solid rgb(61, 100, 202)'
+    backgroundColor: 'rgba(246, 245, 245, 1)',
+    boxShadow: 'inset 0 -10px 10px rgba(61, 100, 202, 0.5)',
+    borderBottom: '3px solid rgb(61, 100, 202)',
   },
   linkStyle: {
     backgroundColor: 'rgb(61, 100, 202)',
@@ -126,7 +159,7 @@ const acrossWords = {
     color: '#404040',
     fontFamily: 'Orbitron',
     fontWeight: 700,
-    fontSize: '16px'
+    fontSize: '15px'
   },
   pStyle: {
     color: '#404040',
@@ -137,6 +170,24 @@ const acrossWords = {
     padding: '0 2%',
     overflowY: 'scroll',
   },
+    topLeftStyle: {
+        position: 'absolute',
+        top: 0, bottom: 'auto', left: 0,
+        right: 'calc(50% - 3px)',
+        width: 'auto',
+        height: '3px',
+        backgroundColor: 'rgb(61, 100, 202)',
+        borderBottomRightRadius: '5px'
+    },
+    topRightStyle: {
+        position: 'absolute',
+        top: 0, bottom: 'auto', right: 0,
+        left: 'calc(75% - 3px)',
+        width: 'auto',
+        height: '4px',
+        backgroundColor: 'rgb(61, 100, 202)',
+        borderBottomLeftRadius: '5px'
+    },
   description: [
     'AcrossWords is a procedurally-generated word game inspired by the New York Times Crossword puzzle (a daily obsession of mine). Clues are served up one at a time, each one chosen from a bank of 16,000 clues based on the user\'s previous guess, until the timer runs out. Players receive diminishing time & score bonuses for answering clues correctly, and are penalized for incorrect guesses.',
     'AcrossWords was built by a team of developers leveraging the MERN stack. My main roles, though I had a hand in most facets of the front and backend, were to seed the MongoDB model with clues and to build the \'Reveal Answer\' frontend functionality and backend scoring logic into the game.',
@@ -153,15 +204,14 @@ const hsp = {
   imgSrc: hspImage,
   tabStyle: {
     backgroundColor: '#FFFFFF',
-    boxShadow: 'inset 0 10px 30px rgba(60, 60, 62, 0.25)',
     borderTop: '3px solid rgb(3, 113, 60)',
-    borderLeft: '1px solid rgb(3, 113, 60)',
-    borderRight: '1px solid rgb(3, 113, 60)',
+    borderLeft: '3px solid rgb(3, 113, 60)',
+    borderRight: '3px solid rgb(3, 113, 60)',
   },
   divStyle: {
     backgroundColor: '#FFFFFF',
-    boxShadow: 'inset 0 0 10px rgba(60, 60, 62, 0.5)',
-    borderTop: '3px solid rgb(3, 113, 60)'
+    boxShadow: 'inset 0 -10px 10px rgba(60, 60, 62, 0.5)',
+    borderBottom: '3px solid rgb(3, 113, 60)',
   },
   linkStyle: {
     backgroundColor: 'rgb(3, 113, 60)',
@@ -181,6 +231,24 @@ const hsp = {
     fontSize: '16px',
     padding: '0 2%',
     overflowY: 'scroll',
+  },
+  topLeftStyle: {
+    position: 'absolute',
+    top: 0, bottom: 'auto', left: 0,
+    right: 'calc(25% - 3px)',
+    width: 'auto',
+    height: '3px',
+    backgroundColor: 'rgb(3, 113, 60)',
+    borderBottomRightRadius: '5px'
+  },
+  topRightStyle: {
+    position: 'absolute',
+    top: 0, bottom: 'auto', right: '0',
+    left: 'calc(100% - 3px)',
+    width: 'auto',
+    height: '4px',
+    backgroundColor: 'rgb(3, 113, 60)',
+    borderBottomLeftRadius: '5px'
   },
   description: [
     'HSP Group is a management consultancy and financial services firm that helps companies manage their international operations and expand globally. They are backed by one of the world\'s leading PE and venture capital firms. My role as lead Web Developer and early employee involves working directly with HSP Group\'s founders and investors to refine and support the company\'s public messaging.',
